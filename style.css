@@ -1,39 +1,82 @@
+html,
 body {
-  background: black;
-  font: 13px sans-serif;
+  width: 100%;
+  min-height: 100%;
   margin: 0;
+  padding: 0;
 }
 
-audio {
-  display: inline-block;
-  height: 40px;
-  width: calc(100% - 650px);
+body {
+  background: #202528;
+  font: 13px sans-serif;
 }
 
-label,
-button {
-  /* background: #f0f0f0; */
-  background: #F04A00;
-  border: 0px solid #999;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 5px 10px 0;
-  padding: 8px 40px;
-  vertical-align: top;
-}
-
-label input {
-  display: none;
-}
-
+/* Visualizer */
 canvas {
   display: block;
   width: 100%;
 }
 
-.info {
-  display: inline-block;
-  float: right;
-  margin: 15px 20px 0;
+/* Dark control section */
+.control-block {
+  width: 100%;
+  padding: 0 12px 14px;
+  background: #303437;
+  box-sizing: border-box;
+}
+
+/* Dark native audio player */
+audio {
+  display: block;
+  width: calc(100% + 24px);
+  height: 44px;
+  margin: 0 -12px 12px;
+  box-sizing: border-box;
+
+  background: #303437;
+  color-scheme: dark;
+}
+
+/* Button and version number */
+.control-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+button {
+  min-width: 213px;
+  padding: 9px 20px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  /* background: #eeeeee; */
+	background: #4a4d4f;
+  /* color: #111; */
+  color: #fff;
+  font: 16px sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  /* background: #d8d8d8; */
+  background: #4a4d4f;
+}
+
+#version {
+  color: #fff;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+  button {
+    min-width: 0;
+    flex: 1;
+  }
+
+  #version {
+    font-size: 15px;
+  }
 }
 

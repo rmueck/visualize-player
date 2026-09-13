@@ -1,42 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Audio Visualizer</title>
-
-  <link rel="stylesheet" href="visualizer.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Spectrum Analyzer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main id="audio-visualizer">
-    <div id="visualizer"></div>
+  <div id="container"></div>
 
-	<audio
-  	id="audio-player"
-  	controls
-  	preload="none"
-  	crossorigin="anonymous">
-	</audio>
+  <div class="control-block">
+    <audio
+      id="audio"
+      controls
+      crossorigin="anonymous">
+    </audio>
 
-    <div class="controls">
-      <button id="stream-button" type="button">
-        Play live stream
+    <div class="control-row">
+      <button id="live" type="button">
+        Visualize stream
       </button>
+
+      <span id="version"></span>
     </div>
+  </div>
 
-    <p class="credit">
-      <a
-        href="https://audiomotion.dev"
-        target="_blank"
-        rel="noopener">
-        audioMotion-analyzer
-      </a>
-
-      <span id="library-version"></span>
-    </p>
-  </main>
-
-  <script type="module" src="visualizer.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
 
