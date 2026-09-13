@@ -1,0 +1,90 @@
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #111;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#audio-visualizer {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#audio-visualizer *,
+#audio-visualizer *::before,
+#audio-visualizer *::after {
+  box-sizing: border-box;
+}
+
+#visualizer {
+  width: 100%;
+  height: 250px;
+  min-height: 180px;
+  background: #111;
+  overflow: hidden;
+}
+
+#visualizer canvas {
+  display: block;
+  width: 100% !important;
+  height: 100%;
+}
+
+#audio-player {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 40px !important;
+  min-height: 40px;
+  margin: 12px 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#stream-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  background: #eee;
+  color: #111;
+  font: inherit;
+  cursor: pointer;
+}
+
+#stream-button:hover {
+  background: #d7d7d7;
+}
+
+.credit {
+  margin: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.credit a {
+  color: inherit;
+}
+
+#library-version {
+  margin-left: 6px;
+}
+

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audio Visualizer</title>
+
+  <link rel="stylesheet" href="visualizer.css">
+</head>
+<body>
+  <main id="audio-visualizer">
+    <div id="visualizer"></div>
+
+	<audio
+  	id="audio-player"
+  	controls
+  	preload="none"
+  	crossorigin="anonymous">
+	</audio>
+
+    <div class="controls">
+      <button id="stream-button" type="button">
+        Play live stream
+      </button>
+    </div>
+
+    <p class="credit">
+      <a
+        href="https://audiomotion.dev"
+        target="_blank"
+        rel="noopener">
+        audioMotion-analyzer
+      </a>
+
+      <span id="library-version"></span>
+    </p>
+  </main>
+
+  <script type="module" src="visualizer.js"></script>
+</body>
+</html>
+
