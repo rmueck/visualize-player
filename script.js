@@ -9,10 +9,15 @@ const audioMotion = new AudioMotionAnalyzer(
     source: audioEl,
     height: window.innerHeight - 50,
     radial: 1,
+    spinSpeed: 1,
+    colorMode: "bar-level",
     gradient: "prism",
+    channelLayout: "single",
+    splitGradient: 1,
     mode: 3,
-    barSpace: 0.6,
-    ledBars: true
+    barSpace: 0.3,
+    ledBars: true,
+    showScaleX: true,
   }
 );
 
