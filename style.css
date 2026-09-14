@@ -53,7 +53,8 @@ button {
   /* background: #eeeeee; */
 	background: #4a4d4f;
   /* color: #111; */
-  color: #fff;
+  /* color: #fff; */
+  color: #F04A00;
   font: 16px sans-serif;
   cursor: pointer;
 }
