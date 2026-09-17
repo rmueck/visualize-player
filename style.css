@@ -81,3 +81,18 @@ button:hover {
   }
 }
 
+/*  Now Playing - Claude: https://claude.ai/chat/8ae98180-3b4c-4f0f-a589-fc1c961c8c51 */
+.nowplaying {
+  color: #F04A00;
+  font: 15px sans-serif;
+  padding: 10px 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nowplaying .np-live {
+  color: #fff;
+  font-weight: bold;
+  margin-right: 6px;
+}

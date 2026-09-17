@@ -9,36 +9,16 @@
 <body>
   <div id="container"></div>
 
-<!--  -->
-
-<!-- <section class="now-playing"> -->
-<!--   <img id="song-art" src="/default-cover.png" alt="Album artwork"> -->
-<!--  -->
-<!--   <div> -->
-<!--     <p>Now playing</p> -->
-<!--     <h2 id="song-title">Loading…</h2> -->
-<!--     <p id="song-artist"></p> -->
-<!--   </div> -->
-<!-- </section> -->
-<!--  -->
-<!-- <p id="listener-count"></p> -->
-<!--  -->
-<!-- <script src="./js/now-playing.js"></script> -->
-
-<!--  -->
   <div class="control-block">
-    <audio
-      id="audio"
-      controls
-      crossorigin="anonymous">
-    </audio>
+  <div id="nowplaying" class="nowplaying">Connecting…</div>
+  <audio id="audio" controls crossorigin="anonymous"></audio>
 
     <div class="control-row">
       <button id="live" type="button">
         Visualize stream
       </button>
 
-      <span id="version"></span>
+      <!-- <span id="version"></span> -->
     </div>
   </div>
 
