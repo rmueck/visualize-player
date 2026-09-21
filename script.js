@@ -36,10 +36,14 @@ const audioMotion = new AudioMotionAnalyzer(
     // // lumiBars: false,
 
   // mode: 10,
+
+  overlay: true,
+  showBgColor: true,
+  bgAlpha: 0.5,        // 0 = image fully visible, 1 = image hidden behind bars
+  bgImageURL: "bg.jpg", // path to your image
   mode: 5,
   maxFPS: 25,
   showFPS: false,
-    // bgAlpha: 0.7,
 	loRes: 0,
 	connectSpeakers: true,
   volume: true,

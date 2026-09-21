@@ -104,3 +104,11 @@ button:hover {
   font-weight: bold;
   margin-right: 6px;
 }
+
+/*  Background */
+#container {
+  background-image: url("bg.jpg");
+  /* background-size: cover; */
+  /* background-position: center; */
+  background-repeat: repeat;
+}
