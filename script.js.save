@@ -35,52 +35,35 @@ const audioMotion = new AudioMotionAnalyzer(
     // // ledBars: false,
     // // lumiBars: false,
 
-  // mode: 10,
-  mode: 5,
   maxFPS: 25,
-  showFPS: false,
-    // bgAlpha: 0.7,
 	loRes: 0,
 	connectSpeakers: true,
-  volume: true,
 	alphaBars: true,
-	// alphaBars: false,
   maxFreq: 22000,
-  // radial: true,
-  radial: false,
-  // spinSpeed: -3,
+  spinSpeed: 0,
+  radial: true,
+  // radial: false,
   // radialInvert: true,
   radialInvert: false,
   colorMode: "gradient",
-  // showBgColor: true,
-  showBgColor: false,
-  channelLayout: "single",
-  // channelLayout: "dual-horizontal",
-  // lumiBars: true,
-  lumiBars: false,
+  channelLayout: "dual-horizontal",
+  lumiBars: true,
   alphaBars: true,
-  // alphaBars: false,
   // gradient: 'rainbow',
   gradient: 'prism',
-  // gradientLeft: 'prism',
-  // gradientRight: 'rainbow',
-  // gradient: 'classic',
-  splitGradient: false,
+  splitGradient: 1,
   linearAmplitude: false,
 	showScaleX: false,
-	// showScaleX: true,
 	showScaleY: false,
   linearBoost: 1.8,
   showPeaks: true,
   fadePeaks: true,
-  peakLine: true,
-  // showPeaks: false,
-  // fadePeaks: true,
-  // fadePeaks: false,
-// peakLine: true,
+  peakLine: false,
   weightingFilter: 'D',
+  mode: 3,
   // mirror: 1,
   mirror: 1,
+  volume: 1,
   }
 );
 
@@ -128,10 +111,3 @@ async function pollNowPlaying() {
 
 pollNowPlaying();
 setInterval(pollNowPlaying, 10000);
-
-const modeToggle = document.getElementById("mode-toggle");
-
-modeToggle.addEventListener("click", () => {
-  audioMotion.radial = !audioMotion.radial;
-  modeToggle.textContent = audioMotion.radial ? "Radial" : "Bars";
-});

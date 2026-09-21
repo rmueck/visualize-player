@@ -29,7 +29,7 @@ canvas {
 audio {
   display: block;
   width: calc(100% + 24px);
-  height: 44px;
+  height: 64px;
   margin: 0 -12px 12px;
   box-sizing: border-box;
 
@@ -46,17 +46,24 @@ audio {
 }
 
 button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   min-width: 213px;
   padding: 9px 20px;
   border: 1px solid #999;
-  border-radius: 5px;
-  /* background: #eeeeee; */
-	background: #4a4d4f;
-  /* color: #111; */
-  /* color: #fff; */
+  border-radius: 10px;
+  background: #000;
   color: #F04A00;
-  font: 16px sans-serif;
+  font: 14px sans-serif;
   cursor: pointer;
+}
+
+button .icon {
+  width: 1.4em;
+  height: 1.4em;
+  flex: none;
 }
 
 button:hover {
@@ -92,7 +99,8 @@ button:hover {
 }
 
 .nowplaying .np-live {
-  color: #fff;
+  /* color: #fff; */
+  color: grey;
   font-weight: bold;
   margin-right: 6px;
 }
