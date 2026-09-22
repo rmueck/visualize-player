@@ -8,11 +8,11 @@ const audioMotion = new AudioMotionAnalyzer(
   {
   source: audioEl,
 
-  height: window.innerHeight - 10,
+  height: window.innerHeight - 190,
   overlay: true,
   showBgColor: true,
-  bgAlpha: 0.5,        // 0 = image fully visible, 1 = image hidden behind bars
-  bgImageURL: "bg.jpg", // path to your image
+  bgAlpha: 0.8,        // 0 = image fully visible, 1 = image hidden behind bars
+  // bgImageURL: "background.jpg", // path to your image
   mode: 5,
   maxFPS: 25,
   showFPS: false,
