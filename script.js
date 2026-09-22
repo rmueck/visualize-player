@@ -34,7 +34,6 @@ const audioMotion = new AudioMotionAnalyzer(
   gradient: 'rainbow',
   // gradient: 'prism',
   // gradientLeft: 'prism',
-  gradient: 'prism',
   // gradientLeft: 'rainbow',
   // gradientRight: 'rainbow',
   splitGradient: false,
