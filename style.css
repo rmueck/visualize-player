@@ -108,7 +108,7 @@ button:hover {
 /*  Background */
 #container {
   background-image: url("bg.jpg");
-  /* background-size: cover; */
-  /* background-position: center; */
+  background-size: cover;
+  background-position: center;
   background-repeat: repeat;
 }
