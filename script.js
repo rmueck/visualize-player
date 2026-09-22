@@ -30,15 +30,12 @@ const audioMotion = new AudioMotionAnalyzer(
   channelLayout: "dual-horizontal",
   lumiBars: false,
   alphaBars: true,
-<<<<<<< HEAD
   // alphaBars: false,
   gradient: 'rainbow',
   // gradient: 'prism',
   // gradientLeft: 'prism',
-=======
   gradient: 'prism',
   // gradientLeft: 'rainbow',
->>>>>>> prism
   // gradientRight: 'rainbow',
   splitGradient: false,
   linearAmplitude: false,
