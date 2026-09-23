@@ -11,7 +11,7 @@ const audioMotion = new AudioMotionAnalyzer(
   height: window.innerHeight - 190,
   overlay: true,
   showBgColor: true,
-  bgAlpha: 0.8,        // 0 = image fully visible, 1 = image hidden behind bars
+  bgAlpha: 0.7,        // 0 = image fully visible, 1 = image hidden behind bars
   // bgImageURL: "background.jpg", // path to your image
   mode: 5,
   maxFPS: 25,
