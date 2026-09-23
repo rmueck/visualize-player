@@ -1,5 +1,6 @@
-import AudioMotionAnalyzer from
-  "https://esm.sh/audiomotion-analyzer?min";
+// import AudioMotionAnalyzer from
+//   "https://esm.sh/audiomotion-analyzer?min";
+import AudioMotionAnalyzer from "./js/audiomotion-analyzer.js";
 
 const audioEl = document.getElementById("audio");
 
