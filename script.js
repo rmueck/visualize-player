@@ -7,8 +7,8 @@ const audioMotion = new AudioMotionAnalyzer(
   document.getElementById("container"),
   {
   source: audioEl,
-
-  height: window.innerHeight - 190,
+  //Set height
+  height: window.innerHeight - 170,
   overlay: true,
   showBgColor: true,
   bgAlpha: 0.7,        // 0 = image fully visible, 1 = image hidden behind bars
@@ -22,9 +22,9 @@ const audioMotion = new AudioMotionAnalyzer(
 	alphaBars: true,
   maxFreq: 22000,
   radial: false,
-  radius: 0.4,
+  radius: 0.2,
   spinSpeed: 0,
-  radialInvert: true,
+  radialInvert: false,
   colorMode: "gradient",
   // channelLayout: "single",
   channelLayout: "dual-horizontal",
@@ -100,3 +100,12 @@ modeToggle.addEventListener("click", () => {
   audioMotion.radial = !audioMotion.radial;
   modeToggle.textContent = audioMotion.radial ? "Radial" : "Bars";
 });
+
+const gradientToggle = document.getElementById("gradient-toggle");
+
+gradientToggle.addEventListener("click", () => {
+  const next = audioMotion.gradient === "prism" ? "rainbow" : "prism";
+	  audioMotion.gradient = next;
+		  gradientToggle.textContent = next === "prism" ? "Prism" : "Rainbow";
+});
+
