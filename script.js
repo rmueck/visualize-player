@@ -97,3 +97,12 @@ modeToggle.addEventListener("click", () => {
   audioMotion.radial = !audioMotion.radial;
   modeToggle.textContent = audioMotion.radial ? "Radial" : "Bars";
 });
+
+const gradientToggle = document.getElementById("gradient-toggle");
+
+gradientToggle.addEventListener("click", () => {
+  const next = audioMotion.gradient === "prism" ? "rainbow" : "prism";
+	  audioMotion.gradient = next;
+		  gradientToggle.textContent = next === "prism" ? "Prism" : "Rainbow";
+});
+
