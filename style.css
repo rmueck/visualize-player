@@ -47,6 +47,10 @@ Retrieved 2026-09-22, License - CC BY-SA 4.0
 /*   background-color: black; */
 /* } */
 
+audio::-webkit-media-controls-timeline {
+    display: none;
+}
+
 audio::-webkit-media-controls-current-time-display {
 	color: #F04A00;
 }
@@ -58,6 +62,18 @@ audio::-webkit-media-controls-play-button {
   background-color: #F04A00;
   border-radius: 14px;
 }
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #010101; /* Example: Red background */
+  border-radius: 14px;
+/*  border: 1px solid black; */
+}
+
+/*
+Source - https://stackoverflow.com/a/68978535
+Posted by Ashutosh Niranjan
+Retrieved 2026-09-23, License - CC BY-SA 4.0
+*/
 
 
 /* Button and version number */
@@ -73,9 +89,10 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-width: 213px;
+  min-width: 190px;
   padding: 9px 20px;
   border: 1px solid #999;
+  /* border: 1px solid #F04A00; */
   border-radius: 10px;
   background: #000;
   color: #F04A00;
@@ -133,6 +150,6 @@ button:hover {
 #container {
   background-image: url("images/bg.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
+  /* background-position: center; */
+  /* background-repeat: repeat; */
 }
