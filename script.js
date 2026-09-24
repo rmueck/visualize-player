@@ -1,6 +1,7 @@
 // import AudioMotionAnalyzer from
-//   "https://esm.sh/audiomotion-analyzer?min";
-import AudioMotionAnalyzer from "./js/audiomotion-analyzer.js";
+//    "https://esm.sh/audiomotion-analyzer?min";
+// import AudioMotionAnalyzer from "https://babaganousha.net/assets/visualizer/js/audiomotion-analyzer.js";
+import AudioMotionAnalyzer from "/assets/visualizer/js/audiomotion-analyzer.js";
 
 const audioEl = document.getElementById("audio");
 
@@ -26,8 +27,8 @@ const audioMotion = new AudioMotionAnalyzer(
   spinSpeed: 0,
   radialInvert: false,
   colorMode: "gradient",
-  // channelLayout: "single",
-  channelLayout: "dual-horizontal",
+  channelLayout: "single",
+  // channelLayout: "dual-horizontal",
   lumiBars: false,
   alphaBars: true,
   // alphaBars: false,
